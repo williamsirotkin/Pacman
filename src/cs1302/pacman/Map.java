@@ -27,9 +27,6 @@ public class Map extends VBox {
     //Pacman Object
     private Pacman pacman;
 
-    //Ghost Objects
-    private Ghost[] ghost;
-
     /**
      * Constructs a Map Object.
      *
@@ -39,27 +36,24 @@ public class Map extends VBox {
         super();
 
         dotsEaten = 0;
+        timesDied = 0;
         fruit = new Fruit(level);
         pacman = new Pacman(level);
-        ghost = new Ghost[4];
-        for (int i = 0; i < 2; i++) {
-            ghost[i] = new Ghost(i);
-        }
 
         hbox = new HBox[10];
-        hbox[0] = new BigDotHBox(fruit);
-        hbox[1] = new BoxHBox(fruit);
-        hbox[2] = new LittleDotHBox(fruit, level);
-        hbox[3] = new BoxHBox(fruit);
-        hbox[4] = new GhostHBox(fruit, ghost);
-        hbox[5] = new LittleDotHBox(fruit);
-        hbox[6] = new BoxHBox(fruit);
-        hbox[7] = new LittleDotHBox(fruit);
-        hbox[8] = new BoxHBox(fruit);
-        hbox[9] = new BigDotHBox(fruit);
+        hbox[0] = new BigDotHBox();
+        hbox[1] = new BoxHBox();
+        hbox[2] = new LittleDotHBox();
+        hbox[3] = new BoxHBox();
+        hbox[4] = new GhostHBox();
+        hbox[5] = new LittleDotHBox();
+        hbox[6] = new BoxHBox();
+        hbox[7] = new LittleDotHBox();
+        hbox[8] = new BoxHBox();
+        hbox[9] = new BigDotHBox();
 
         for (int i = 0; i < 10; i++) {
-            this.getChildren.add(hbox[i]);
+            this.getChildren().add(hbox[i]);
         } // for
     } // Map
 
@@ -70,7 +64,7 @@ public class Map extends VBox {
      * @param y      y coordinate to remove dot from
      */
     public void removeDot(int x, int y) {
-        hbox[x].removeDot(y);
+//        hbox[x].removeDot(y);
         dotsEaten++;
     }
 

@@ -18,8 +18,6 @@ public class Pacman extends VBox {
     private HBox mapHBox;
 
     private Map map;
-    private cs1302.pacman.imageview.Pacman pacman;
-
 
     /**
      * Constructs a Pacman object.
@@ -32,11 +30,11 @@ public class Pacman extends VBox {
 
         scoreLabel = new Label("Score: 0");
         livesLabel = new Label("Lives: 3");
-        scoreAndLivesHBox.getChildren().addAll(scoreLabel, livesLabel);
+        scoreAndLivesHBox = new HBox(scoreLabel, livesLabel);
+        map = new Map(1);
+        mapHBox = new HBox(map);
 
-        mapHBox.getChildren().add(map);
-
-        super.getChildren().addAll(scoreAndLivesHBox, mapHBox);
+        this.getChildren().addAll(scoreAndLivesHBox, map);
     } // Pacman
 
     /**
@@ -87,7 +85,7 @@ public class Pacman extends VBox {
     public void updateScore() {
         Platform.runLater(() -> {
             while (getLives() != 0) {
-                setScore(map.getDotsEaten() * 10 + Math.pow(2, map.getFruitEaten()) * 100);
+//                setScore(map.getDotsEaten() * 10 + Math.pow(2, map.getFruitEaten()) * 100);
                 setScoreLabel(getScore());
             }
         });

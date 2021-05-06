@@ -1,6 +1,7 @@
 package cs1302.pacman.imageview;
 
 import javafx.scene.image.ImageView;
+import javafx.scene.image.Image;
 
 /**
  * Creates the pacman object
@@ -19,7 +20,7 @@ public class Pacman extends ImageView {
     public Pacman(int level) {
         super();
 
-        this.setImage();
+        this.setImage(new Image("file:resources/pacmanFacingLeft.png", 50, 50, false, false));
         this.speed = 1.0 + level/10;
         this.direction = "left";
     }

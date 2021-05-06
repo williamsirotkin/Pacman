@@ -17,6 +17,7 @@ public class LittleDotHBox extends HBoxTemplate {
         imageview = new ImageView[10];
         for (int i = 0; i < 10; i++) {
             imageview[i] = new LittleDot();
+            super.getChildren().add(imageview[i]);
         } //for
 
     } // LittleDotHBox

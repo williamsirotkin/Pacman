@@ -7,6 +7,10 @@ import java.lang.Thread;
  */
 public class PacmanGame extends Game {
 
+    public PacmanGame(int width, int height, int fps) {
+        super(width, height, fps);
+    }
+
     /**
      * Perform one iteration of the main game loop.
      */
@@ -31,7 +35,7 @@ public class PacmanGame extends Game {
         ghostTwoThread.start();
 
         Thread scoreThread = new Thread(() -> {
-            pacmanVBox.updateScore();
+//            pacmanVBox.updateScore();
         });
         scoreThread.setDaemon(true);
         scoreThread.start();

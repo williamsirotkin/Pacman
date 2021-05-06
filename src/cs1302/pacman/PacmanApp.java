@@ -10,7 +10,7 @@ import javafx.stage.Stage;
 public class PacmanApp extends Application {
 
     Pacman pacmanVBox = new Pacman();
-    PacmanGame pacmanGame = new PacmanGame();
+//    PacmanGame pacmanGame = new PacmanGame(550, 550, 5);
 
     /**
      * Runs Pacman.
@@ -21,13 +21,13 @@ public class PacmanApp extends Application {
         Scene scene = new Scene(pacmanVBox);
 
         //Setting Stage
-        stage.setMaxWidth(550);
-        stage.setMaxHeight(550);
+        stage.setMaxWidth(720);
+        stage.setMaxHeight(720);
         stage.setTitle("Pacman");
         stage.setScene(scene);
         stage.sizeToScene();
         stage.show();
 
-        pacmanGame.update();
+//        pacmanGame.update();
     }
 }

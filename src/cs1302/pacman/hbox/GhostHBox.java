@@ -22,10 +22,15 @@ public class GhostHBox extends HBoxTemplate {
                 imageview[i] = new LittleDot();
             } else if (i == 1 || i == 2 || i == 7 || i == 8) {
                 imageview[i] = new Box();
-            } else {
-                imageview[i] = new Ghost();
+            } else if (i == 4) {
+                imageview[i] = new Ghost(0);
+            } else if (i == 5) {
+                imageview[i] = new Ghost(1);
             }
         }
 
+        for (int i = 0; i < 10; i++) {
+            super.getChildren().add(imageview[i]);
+        }
     }
 }

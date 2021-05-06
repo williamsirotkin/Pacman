@@ -11,8 +11,8 @@ public class Driver {
     public static void main(String[] args) {
         try {
             Application.launch(PacmanApp.class, args);
-        } catch (Exception e) {
-            System.out.println("There was an error with the application");
+        } catch (java.lang.IllegalArgumentException e) {
+            System.out.println(e);
             System.exit(1);
         } // catch
     } // main

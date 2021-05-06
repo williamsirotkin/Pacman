@@ -3,6 +3,7 @@ package cs1302.pacman.imageview;
 import java.util.Random;
 import java.lang.Math;
 import javafx.scene.image.ImageView;
+import javafx.scene.image.Image;
 
 /**
  * Creates a Fruit Object Which Can Be Eaten To Allow Extra Points
@@ -25,15 +26,20 @@ public class Fruit extends ImageView {
         } else {
             exists = true;
             if (level == 2) {
-                fruit = "";
+                this.setImage(new Image("file:resources/cherryImage.png", 50, 50, false, false));
+                points = 100;
             } else if (level == 4) {
-                fruit = "";
+                this.setImage(new Image("file:resources/appleImage.png", 50, 50, false, false));
+                points = 200;
             } else if (level == 6) {
-                fruit = "";
+                this.setImage(new Image("file:resources/orangeImage.png", 50, 50, false, false));
+                points = 400;
             } else if (level == 8) {
-                fruit = "";
+                this.setImage(new Image("file:resources/strawberryImage.png", 50, 50,false, false));
+                points = 800;
             } else if (level == 10) {
-                fruit = "";
+                this.setImage(new Image("file:resources/bananaImage.png", 50, 50, false, false));
+                points = 1600;
             }
 
             Random random = new Random();
@@ -57,7 +63,6 @@ public class Fruit extends ImageView {
                     }
                 }
             }
-            points = Math.pow(2, level - 1) / 100;
         }
     } // Fruit
 
@@ -77,8 +82,18 @@ public class Fruit extends ImageView {
         return x;
     }
 
+    /**
+     *
+     */
     public int getYCoordinate() {
         return y;
+    }
+
+    /**
+     *
+     */
+    public String getFruit() {
+        return fruit;
     }
 
 }

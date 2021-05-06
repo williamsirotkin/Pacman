@@ -2,6 +2,7 @@ package cs1302.pacman.imageview;
 
 import java.util.Random;
 import javafx.scene.image.ImageView;
+import javafx.scene.image.Image;
 
 /**
  * Creates a Ghost Object.
@@ -14,24 +15,14 @@ public class Ghost extends ImageView {
     /**
      * Constructs a Ghost Object.
      *
-     * @param level the level of the game
      */
-    public Ghost(int level) {
+    public Ghost(int ghost) {
         super();
 
-        this.speed = 0.8 + level/10;
-
-        Random random = new Random();
-        int ghostColorInt = random.nextInt(4);
-
-        if (ghostColorInt == 0) {
-            this.setImage();
-        } else if (ghostColorInt == 1) {
-            this.setImage();
-        } else if (ghostColorInt == 2) {
-            this.setImage();
+        if (ghost == 0) {
+            super.setImage(new Image("file:resources/ghost1Image.png", 50, 50, false, false));
         } else {
-            this.setImage();
+            super.setImage(new Image("file:resources/ghost2Image.png", 50, 50, false, false));
         }
     }
 }

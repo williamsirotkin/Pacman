@@ -22,6 +22,7 @@ public class BoxHBox extends HBoxTemplate {
             } else {
                 imageview[i] = new Box();
             }
+            super.getChildren().add(imageview[i]);
         }
     }
 }
