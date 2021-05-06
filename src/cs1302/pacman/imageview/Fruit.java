@@ -12,8 +12,8 @@ public class Fruit extends ImageView {
     //Instance Variables Of A Fruit
     private String fruit;
     private int points;
-    private int xCoordinate;
-    private int yCoordinate;
+    private int x;
+    private int y;
     private boolean exists;
 
     /**
@@ -31,25 +31,25 @@ public class Fruit extends ImageView {
             } else if (level == 6) {
                 fruit = "";
             } else if (level == 8) {
-                fruit == "";
+                fruit = "";
             } else if (level == 10) {
-                fruit == "";
+                fruit = "";
             }
 
             Random random = new Random();
-            boolean valid == false;
+            boolean valid = false;
             while (!valid) {
-                xCoordinate = random.nextInt(10);
-                yCoordinate - random.nextINt(10);
+                x = random.nextInt(10);
+                y = random.nextInt(10);
                 if (y == 5 || y == 7) {
                     valid = true;
                 } else if (y == 0 || y == 9) {
                     if (x != 0 && x != 9) {
-                        valid == true;
+                        valid = true;
                     }
                 } else if (y == 2) {
                     if (x != 5) {
-                        valid == true;
+                        valid = true;
                     }
                 } else {
                     if (x != 1 && x != 2 && x != 4 && x != 5 && x != 7 && x != 8) {
@@ -74,11 +74,11 @@ public class Fruit extends ImageView {
      *
      */
     public int getXCoordinate() {
-        return xCoordinate;
+        return x;
     }
 
     public int getYCoordinate() {
-        return yCoordinate;
+        return y;
     }
 
 }

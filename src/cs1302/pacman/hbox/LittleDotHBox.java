@@ -1,5 +1,8 @@
 package cs1302.pacman.hbox;
 
+import javafx.scene.image.ImageView;
+import cs1302.pacman.imageview.LittleDot;
+
 /**
  * Creates an HBox with all little dots for image views.
  */
@@ -11,6 +14,7 @@ public class LittleDotHBox extends HBoxTemplate {
     public LittleDotHBox() {
         super();
 
+        imageview = new ImageView[10];
         for (int i = 0; i < 10; i++) {
             imageview[i] = new LittleDot();
         } //for

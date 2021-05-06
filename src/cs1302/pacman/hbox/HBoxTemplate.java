@@ -1,5 +1,7 @@
 package cs1302.pacman.hbox;
 
+import javafx.scene.image.ImageView;
+
 /**
  * Creates a Template to create hbox objects.
  */

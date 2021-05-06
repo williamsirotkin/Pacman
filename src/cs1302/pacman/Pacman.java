@@ -3,6 +3,7 @@ package cs1302.pacman;
 import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.application.Platform;
 
 /**
  * Creates Pacman game.
@@ -109,11 +110,10 @@ public class Pacman extends VBox {
      */
     public void updateGhostOne() {
         Platform.runLater(() -> {
-            while (getLives(() != 0) {
+            while (getLives() != 0) {
 
             }
-        }
-    }
+        });
+    } // updateGhostOne
 
-
-}
+} // Pacman

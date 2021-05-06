@@ -1,6 +1,7 @@
 package cs1302.pacman.imageview;
 
 import java.util.Random;
+import javafx.scene.image.ImageView;
 
 /**
  * Creates a Ghost Object.

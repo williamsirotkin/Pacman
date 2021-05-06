@@ -1,5 +1,15 @@
 package cs1302.pacman;
 
+import cs1302.pacman.imageview.Fruit;
+import cs1302.pacman.imageview.Ghost;
+import cs1302.pacman.imageview.Pacman;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
+import cs1302.pacman.hbox.BigDotHBox;
+import cs1302.pacman.hbox.LittleDotHBox;
+import cs1302.pacman.hbox.BoxHBox;
+import cs1302.pacman.hbox.GhostHBox;
+
 /**
  * Creates the Pacman Map.
  */
@@ -32,7 +42,7 @@ public class Map extends VBox {
         fruit = new Fruit(level);
         pacman = new Pacman(level);
         ghost = new Ghost[4];
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < 2; i++) {
             ghost[i] = new Ghost(i);
         }
 

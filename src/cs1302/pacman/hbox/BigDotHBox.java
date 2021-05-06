@@ -1,5 +1,10 @@
 package cs1302.pacman.hbox;
 
+import javafx.scene.image.ImageView;
+import cs1302.pacman.imageview.BigDot;
+import cs1302.pacman.imageview.LittleDot;
+
+
 /**
  * Creates an HBox for top and bottom rows of pacman map.
  */

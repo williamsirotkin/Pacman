@@ -3,7 +3,6 @@ package cs1302.pacman;
 import java.util.BitSet;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.event.Event;

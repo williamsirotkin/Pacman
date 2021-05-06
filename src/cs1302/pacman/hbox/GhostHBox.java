@@ -1,5 +1,10 @@
 package cs1302.pacman.hbox;
 
+import javafx.scene.image.ImageView;
+import cs1302.pacman.imageview.Ghost;
+import cs1302.pacman.imageview.Box;
+import cs1302.pacman.imageview.LittleDot;
+
 /**
  * Creates an HBox with boxes and a ghost spawn box in the middle.
  */
@@ -11,6 +16,7 @@ public class GhostHBox extends HBoxTemplate {
     public GhostHBox() {
         super();
 
+        imageview = new ImageView[10];
         for (int i = 0; i < 10; i++) {
             if (i == 0 || i == 3 || i == 6 || i == 9) {
                 imageview[i] = new LittleDot();

@@ -5,7 +5,7 @@ import javafx.scene.image.ImageView;
 /**
  * Creates a Big DotImageview.
  */
-public class BigDot extends ImageView() {
+public class BigDot extends ImageView {
 
     /**
      * Constructs a BigDot Object.
@@ -14,4 +14,5 @@ public class BigDot extends ImageView() {
         super();
         this.setImage();
     }
+
 } // BigDot

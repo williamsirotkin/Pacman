@@ -1,5 +1,7 @@
 package cs1302.pacman.imageview;
 
+import javafx.scene.image.ImageView;
+
 /**
  * Creates a little dot on the map.
  */
