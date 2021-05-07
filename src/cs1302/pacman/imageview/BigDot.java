@@ -13,7 +13,7 @@ public class BigDot extends ImageView {
      */
     public BigDot() {
         super();
-        this.setImage(new Image("file:bigDotImage.png", 50, 50, false, false));
+        super.setImage(new Image("file:resources/bigDotImage.png", 50, 50, false, false));
     }
 
 } // BigDot

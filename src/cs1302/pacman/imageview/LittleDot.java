@@ -12,6 +12,7 @@ public class LittleDot extends ImageView {
      * Constructs a little dot object.
      */
     public LittleDot() {
-        this.setImage(new Image("file:littleDotImage.png", 50, 50, false, false));
+        super();
+        super.setImage(new Image("file:resources/littleDotImage.png", 50, 50, false, false));
     }
 }

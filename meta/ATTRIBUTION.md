@@ -43,7 +43,7 @@
 * Orange Image
     - resources/orangeImage.png
     - clipartmax. 2021.
-    - https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaf7sevs-sG9Eolkv2PD-bhwdnIOzcgG_k9kfMs5NYyarWP2MvEeojp7fZrM75WBRSh1g&usqp=CAU
+    - https://listimg.pinclipart.com/picdir/s/317-3173249_grapes-clipart-pacman-fruit-png-download.png
     - Attribution-NonCommerical
 
 * Strawberry Image
@@ -60,14 +60,14 @@
 
 * Little Dot Image
     - resources/littleDotImage.png
-    - pngTree. 2021.
-    - https://png.pngtree.com/element_our/20190530/ourmid/pngtree-gray-circle-image_1263060.jpg
+    - adobe. 2021.
+    - http://www.downloadclipart.net/medium/24932-a-black-circle-clip-art.png
     - Attribution-NonCommercial
 
 * Big Dot Image
     - resources/bigDotImage.png
-    - pngFind. 2021.
-    - https://www.pngfind.com/pngs/m/180-1807233_location-dot-grey-grey-colour-circle-png-transparent.png
+    - Pinetrest. 2021.
+    - https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkPPUI2IjWIgyZqdp9zIv80YJwEynepk9xuBnO6Ln5UEJg54K7j3ZsHX97U3deh1NMwB8&usqp=CAU
     - Attribution-NonCommmercial
 
 * Box Image
