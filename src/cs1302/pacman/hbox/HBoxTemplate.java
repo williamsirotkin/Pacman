@@ -17,7 +17,7 @@ public abstract class HBoxTemplate extends HBox {
      * @param x the coordinate the imageview will be set
      * @param imageview the imageview that will be set
      */
-    public void setImageView(int x, ImageView imageview) {
+    public void set(int x, ImageView imageview) {
         this.imageview[x] = imageview;
     }
 
@@ -27,7 +27,7 @@ public abstract class HBoxTemplate extends HBox {
      * @param x the coordinate of the imageview to be returned
      * @return the imageview at that coordinate
      */
-    public ImageView getImageView(int x) {
+    public ImageView get(int x) {
         return imageview[x];
     }
 }
