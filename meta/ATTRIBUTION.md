@@ -1,9 +1,3 @@
-* Asset Name
-  - `resources/path/to/file`
-  - Author. Year.
-  - URL
-  - License
-
 * Pacman Facing Right Image
     - resources/pacmanFacingRight.png
     - StickPNG. 2021.

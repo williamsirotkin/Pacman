@@ -5,6 +5,7 @@ import cs1302.pacman.imageview.Ghost;
 import cs1302.pacman.imageview.Box;
 import cs1302.pacman.imageview.LittleDot;
 
+
 /**
  * Creates an HBox with boxes and a ghost spawn box in the middle.
  */

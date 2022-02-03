@@ -4,6 +4,7 @@ import javafx.scene.image.ImageView;
 import cs1302.pacman.imageview.Box;
 import cs1302.pacman.imageview.LittleDot;
 
+
 /**
  * Creates an HBox with boxes in certain parts.
  */
